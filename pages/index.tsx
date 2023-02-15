@@ -2,10 +2,20 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 50,
+      delay: 50,
+    });
+  });
   return (
     <>
       <Head>
@@ -34,6 +44,7 @@ export default function Home() {
                 width={100}
                 height={24}
                 priority
+                data-aos="fade-right"
               />
             </a>
           </div>
@@ -47,6 +58,7 @@ export default function Home() {
             width={180}
             height={37}
             priority
+            data-aos="fade-right"
           />
           <div className={styles.thirteen}>
             <Image
@@ -117,7 +129,18 @@ export default function Home() {
             </p>
           </a>
         </div>
+       
       </main>
+      <div className='h-[700px] bg-lime-300 flex justify-center items-center'>
+      <Image
+              src="/thirteen.svg"
+              alt="13"
+              width={40}
+              height={31}
+              priority
+              data-aos="zoom-out-left"
+            />
+      </div>
     </>
   )
 }
