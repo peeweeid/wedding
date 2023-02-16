@@ -32,7 +32,7 @@ export default function Home() {
         <Image src={flower} alt=''className=' absolute top-0 lg:-top-10 w-full z-10' />
         <div className='container px-10 z-50'>
           <div className='bg-white  pt-36 pb-32'>
-            <h3 className='font-serronascript text-6xl lg:text-7xl text-center lg:mt-48'
+            <h3 className='font-serronascript text-6xl lg:text-7xl text-center lg:mt-48 text-third'
              data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="1500">The Wedding of</h3>
@@ -77,15 +77,15 @@ export default function Home() {
       <section className='bg-secondary'>
           <div className='container px-8 py-4 pt-32 pb-24'>
             <div className='bg-white rounded-2xl pt-8 pb-8' data-aos="flip-left"  data-aos-duration="1500">
-                <h1 className='font-serronascript text-9xl text-center' >Satrio</h1>
-                <h1 className='font-serronassans text-2xl lg:text-4xl text-center'>Satrio adi Wiguno</h1>
-                <h1 className='font-bold text-xl lg:text-4xl text-center mt-2 mb-2'>Putra Dari :</h1>
-                <h1 className='font-light text-xl lg:text-4xl text-center mt-2 mb-2'>Bpk.Leonardo & Ibu. Julias Roberth</h1>
+                <h1 className='font-serronascript text-9xl text-center text-third' >Satrio</h1>
+                <h1 className='font-serronassans text-2xl lg:text-4xl text-center text-third'>Satrio adi Wiguno</h1>
+                <h1 className='font-bold text-xl lg:text-4xl text-center mt-2 mb-2 text-third'>Putra Dari :</h1>
+                <h1 className='font-light text-xl lg:text-4xl text-center mt-2 mb-2 text-third'>Bpk.Leonardo & Ibu. Julias Roberth</h1>
                 <h1 className='font-bold text-xl lg:text-4xl text-third text-center mt-8 mb-5'>Bersama Dengan</h1>
-                <h1 className='font-serronascript text-9xl text-center'>Lina</h1>
-                <h1 className='font-serronassans text-2xl lg:text-4xl text-center'>Lina Azhari</h1>
-                <h1 className='font-bold text-xl lg:text-4xl text-center mt-2 mb-2'>Putri Dari :</h1>
-                <h1 className='font-light text-xl lg:text-4xl text-center mt-2 mb-2'>Bpk.Edie guerro & Ibu. Anggelina Jolie</h1>
+                <h1 className='font-serronascript text-9xl text-center text-third'>Lina</h1>
+                <h1 className='font-serronassans text-2xl lg:text-4xl text-center text-third'>Lina Azhari</h1>
+                <h1 className='font-bold text-xl lg:text-4xl text-center mt-2 mb-2 text-third'>Putri Dari :</h1>
+                <h1 className='font-light text-xl lg:text-4xl text-center mt-2 mb-2 text-third'>Bpk.Edie guerro & Ibu. Anggelina Jolie</h1>
             </div>
           </div>
       </section>
