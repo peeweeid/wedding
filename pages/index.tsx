@@ -55,8 +55,8 @@ export default function Home() {
               data-aos="fade-left"
               data-aos-easing="linear"
               data-aos-duration="1500"
-              >LINA (lincah dan nakal)......rawrrrrr , kami bertemu tahun 2017 waktu itu saya lebih tepatnya
-              ingin mencari partner untuk berkerja bersama diluar kantor , akhirnya muncul dia dari kegelapan membawa lentera seraya berbisik "kene mas tak rewangi" ,
+              >LINA *lincah dan nakal*......rawrrrrr , kami bertemu tahun 2017 waktu itu saya lebih tepatnya
+              ingin mencari partner untuk berkerja bersama diluar kantor , akhirnya muncul dia dari kegelapan membawa lentera seraya berbisik *kene mas tak rewangi* ,
               pastinya tidak begitulah , kami semakin dekat sampai akhirnya saya memutuskan 2019 akhir untuk mencoba dekat untuk urusan lebih serius....
               apakah itu ? membuat PT ? membuat sekte ? bukan tapi menjadikan dia partner hidup .   
               </p>
