@@ -108,3 +108,13 @@ a {
     color-scheme: dark;
   }
 }
+@font-face {
+  font-family: "serronassans";
+  src: url("../public/SerronaSans.otf");
+}
+@font-face {
+  font-family: "serronascript";
+  src: url("../public/SerronaScript.otf");
+  
+
+}

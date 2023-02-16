@@ -1,10 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
+import Countdown from '../components/Countdown.js'
 import styles from '@/styles/Home.module.css'
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import flower from '../public/flower.png'
+import Link from 'next/link';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -16,6 +19,7 @@ export default function Home() {
       delay: 50,
     });
   });
+  const newYear = new Date("April 18,2023").getTime()
   return (
     <>
       <Head>
@@ -24,123 +28,70 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-                data-aos="fade-right"
-              />
-            </a>
+      <section className='bg-primary  relative'>
+        <Image src={flower} alt=''className=' absolute top-0 lg:-top-10 w-full z-10' />
+        <div className='container px-10 z-50'>
+          <div className='bg-white  pt-36 pb-32'>
+            <h3 className='font-serronascript text-6xl lg:text-7xl text-center lg:mt-48'
+             data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">The Wedding of</h3>
+            <h3 className='font-serronassans text-8xl text-four lg:text-9xl text-center '
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            >SATRIO & LINA</h3>
+            <div className='flex items-center justify-center mt-5 pt-8'>
+             <Link href="" > <button className='px-4 py-2 rounded-full shadow-lg bg-third text-base font-thin text-white'>Buka Undangan</button></Link>
+          </div>
           </div>
         </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-            data-aos="fade-right"
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
+      </section>
+      <section className='bg-secondary'>
+          <div className='container pt-32 pb-16 px-4'>
+              <div className='px-4'>
+              <h1 className='text-center text-four font-serronassans text-2xl'>WE FOUND LOVE</h1>
+              <p className='text-justify text-third mt-5'
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+              >LINA (lincah dan nakal)......rawrrrrr , kami bertemu tahun 2017 waktu itu saya lebih tepatnya
+              ingin mencari partner untuk berkerja bersama diluar kantor , akhirnya muncul dia dari kegelapan membawa lentera seraya berbisik "kene mas tak rewangi" ,
+              pastinya tidak begitulah , kami semakin dekat sampai akhirnya saya memutuskan 2019 akhir untuk mencoba dekat untuk urusan lebih serius....
+              apakah itu ? membuat PT ? membuat sekte ? bukan tapi menjadikan dia partner hidup .   
+              </p>
+              <p className='text-justify text-third mt-5'
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-duration="1500">
+                tahun demi tahun ada kadang masanya ON dan OFF dalam hubungan tapi saya beruntung selalu ditemani oleh dia,
+                selama ini setiap ada masalah ketika saya sedang lemah dia selalu bisa nguatin , ketika saya nguat dia juga yang ngelemesin...rawrrrrr hahaha
+                , anaknya sangat humoris , saking humorisnya banyak saya ngelucu tapi kayaknya dia ngga mudeng , gimna ironiskan ,
+                dia juga anaknya serba bisa , multitalenta semua orang pernah dibantu sama dia ,dari orang ngga punya uang dipinjemin , orang ngga bisa kerja
+                diajarin , sampai nenek di pinggir jalan disebrangin , padahal neneknya mau naik angkot dari kiri jadi kelewat, emang anak satu ini kadang aneh tapi ngangenin,
+                tapi ya begitulah dia , ya udah ini saya cuman belajar bikin undangan online sanah hus hus....
+              </p>
+              </div>
           </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-       
-      </main>
-      <div className='h-[700px] bg-lime-300 flex justify-center items-center'>
-      <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-              data-aos="zoom-out-left"
-            />
-      </div>
+      </section>
+      <section className='bg-secondary'>
+          <div className='container px-8 py-4 pt-32 pb-24'>
+            <div className='bg-white rounded-2xl pt-8 pb-8' data-aos="flip-left"  data-aos-duration="1500">
+                <h1 className='font-serronascript text-9xl text-center' >Satrio</h1>
+                <h1 className='font-serronassans text-2xl lg:text-4xl text-center'>Satrio adi Wiguno</h1>
+                <h1 className='font-bold text-xl lg:text-4xl text-center mt-2 mb-2'>Putra Dari :</h1>
+                <h1 className='font-light text-xl lg:text-4xl text-center mt-2 mb-2'>Bpk.Leonardo & Ibu. Julias Roberth</h1>
+                <h1 className='font-bold text-xl lg:text-4xl text-third text-center mt-8 mb-5'>Bersama Dengan</h1>
+                <h1 className='font-serronascript text-9xl text-center'>Lina</h1>
+                <h1 className='font-serronassans text-2xl lg:text-4xl text-center'>Lina Azhari</h1>
+                <h1 className='font-bold text-xl lg:text-4xl text-center mt-2 mb-2'>Putri Dari :</h1>
+                <h1 className='font-light text-xl lg:text-4xl text-center mt-2 mb-2'>Bpk.Edie guerro & Ibu. Anggelina Jolie</h1>
+            </div>
+          </div>
+      </section>
+      <section className='bg-four'>
+      <Countdown newYear={newYear}/>
+      </section>
     </>
   )
 }
